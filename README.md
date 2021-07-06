@@ -1,4 +1,4 @@
-# Terraform GCP Domain Restricted Sharing Temporary Override
+# Terraform GCP Domain Restricted Sharing Toggle
 
 This is a quick and dirty module you can use in your Terraform configurations to get around scenarios where you have enabled domain-restricted sharing at top-level, but want to add google/gsuite*/gserviceaccount* permissions via IAM to child projects.
 
