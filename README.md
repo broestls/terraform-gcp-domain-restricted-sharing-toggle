@@ -8,8 +8,9 @@ Add the following block to your configurations:
 
 ```hcl
 module "drs-override" {
-    project_id = "your_project_id"
-    resources = [google_project_iam_policy.compute, google_pubsub_iam_policy.push]
+  source     = "git@github.com:broestls/terraform-domain-restricted-sharing-override?ref=v0.0.1"
+  project_id = "your_project_id"
+  resources  = [google_project_iam_policy.compute, google_pubsub_iam_policy.push]
 }
 ```
 
